@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { topBarLinkTypes } from "./Types";
 
-const topbarLink: topBarLinkTypes = [
+const topbarLink: topBarLinkTypes[] = [
   {
     name: "NEW ARRIVAL",
     link: "#",
