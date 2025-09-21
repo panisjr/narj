@@ -5,8 +5,8 @@ import FancyButton from "./FancyButton";
 export default function Landing() {
   return (
     <div className="flex flex-row py-5 px-16 w-full h-screen">
-      <div className="w-full flex flex-col items-center justify-center border-[#053600]">
-        <p className="text-7xl">
+      <div className="w-full flex flex-col items-center md:justify-center border-[#053600]">
+        <p className="md:text-7xl text-5xl">
           Crafted to seamlessly blend fashion with function
         </p>
         <div className="flex flex-row items-start w-full py-3">
