@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import FancyButton from "./FancyButton";
+import { CarouselImage } from "./CarouselImage";
 
 export default function Landing() {
   return (
@@ -17,7 +18,10 @@ export default function Landing() {
           />
         </div>
       </div>
-      <div className="w-full"></div>
+      <div className="w-full flex items-center justify-center">
+        <CarouselImage/>
+        
+      </div>
     </div>
   );
 }

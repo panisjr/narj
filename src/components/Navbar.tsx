@@ -87,6 +87,9 @@ export default function Header() {
               <div className="p-2 hover:cursor-pointer">
                 <AlignJustify className="text-[#0D3531] w-8 h-8" />
               </div>
+              <p className="text-2xl font-medium font-libre tracking-widest pt-2">
+                NARJ
+              </p>
             </AccordionTrigger>
             <AccordionContent>
               <div className="flex flex-col gap-5 px-5 border-b">
