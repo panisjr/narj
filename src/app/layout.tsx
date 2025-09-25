@@ -7,6 +7,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
 });
+
 const libre = Libre_Baskerville({
   weight: ["400", "700"],
   variable: "--font-libre",

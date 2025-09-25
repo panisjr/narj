@@ -8,8 +8,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  // CarouselNext,
+  // CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
@@ -21,6 +21,7 @@ export function CarouselImage() {
   return (
     <Carousel
       plugins={[plugin.current]}
+      opts={{loop: true}}
       className="w-full max-w-lg"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
@@ -31,14 +32,14 @@ export function CarouselImage() {
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center">
-                  <div className="relative w-full h-[500px]">
+                  <div className="relative w-full h-[550px]">
                     <Image
-                      src={"/assets/images/m1.jpg"}
+                      src={`/assets/images/m${(index % 4)+1}.jpg`}
                       alt="Sample model"
                       fill
                       priority
                       sizes="300px"
-                      className="object-cover"
+                      className="object-contain"
                     />
                   </div>
                 </CardContent>
@@ -47,8 +48,8 @@ export function CarouselImage() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious />
+      <CarouselNext /> */}
     </Carousel>
   );
 }
